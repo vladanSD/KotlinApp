@@ -13,9 +13,6 @@ import java.lang.reflect.Type
 
 class RecipeDeserializer : JsonDeserializer<Recipe> {
     override fun deserialize(json: JsonElement, typeOfT: Type, context: JsonDeserializationContext?): Recipe {
-
-        val recipe = Recipe.napraviParsiranObjekat(json)
-        recipe.listOfSteps = Recipe.vratiListu(json.asJsonObject.getAsJsonArray("steps"))
-        return recipe
+        return Recipe.napraviParsiranObjekat(json)
     }
 }

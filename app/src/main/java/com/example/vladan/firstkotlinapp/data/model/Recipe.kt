@@ -106,9 +106,6 @@ data class Recipe(
 
     var indexInResponse: Int = -1
 
-    @Ignore
-    var listOfSteps: List<Step>? = null
-
     companion object {
 
         fun srediDate(stringdate: String?): Date {
@@ -130,16 +127,6 @@ data class Recipe(
                 int = jsonEle.asInt
             }
             return int
-        }
-
-        fun vratiListu(jsonArray: JsonArray): List<Step> {
-            val listType = object : TypeToken<ArrayList<Step>>() {
-            }.type
-            val listaStepova = Gson().fromJson<List<Step>>(jsonArray, listType)
-            for(step in listaStepova){
-                Log.i("step", step.text)
-            }
-            return listaStepova
         }
 
         fun napraviParsiranObjekat(json: JsonElement): Recipe = Recipe(

@@ -456,18 +456,18 @@ public class PagingRequestHelper {
      */
     public enum RequestType {
         /**
-         * Corresponds to an initial request made to a {@link DataSource} or the empty state for
+         * Corresponds to an initial request made to a {@link } or the empty state for
          * a {@link android.arch.paging.PagedList.BoundaryCallback BoundaryCallback}.
          */
         INITIAL,
         /**
-         * Corresponds to the {@code loadBefore} calls in {@link DataSource} or
+         * Corresponds to the {@code loadBefore} calls in {@link } or
          * {@code onItemAtFrontLoaded} in
          * {@link android.arch.paging.PagedList.BoundaryCallback BoundaryCallback}.
          */
         BEFORE,
         /**
-         * Corresponds to the {@code loadAfter} calls in {@link DataSource} or
+         * Corresponds to the {@code loadAfter} calls in {@link } or
          * {@code onItemAtEndLoaded} in
          * {@link android.arch.paging.PagedList.BoundaryCallback BoundaryCallback}.
          */

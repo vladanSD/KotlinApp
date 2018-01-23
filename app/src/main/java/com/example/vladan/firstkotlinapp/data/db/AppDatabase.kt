@@ -6,14 +6,13 @@ import android.arch.persistence.room.RoomDatabase
 import android.arch.persistence.room.TypeConverters
 import android.content.Context
 import com.example.vladan.firstkotlinapp.data.model.Recipe
-import com.example.vladan.firstkotlinapp.data.model.Step
 
 /**
  * Created by Vladan on 11.12.2017..
  */
 @Database(
-        entities = arrayOf(Recipe::class, Step::class),
-        version = 6,
+        entities = [(Recipe::class)],
+        version = 7,
         exportSchema = false
 )
 @TypeConverters(Converters::class)

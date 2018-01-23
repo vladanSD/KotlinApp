@@ -1,6 +1,5 @@
 package com.example.vladan.firstkotlinapp.data.db
 
-import android.arch.lifecycle.LiveData
 import android.arch.paging.DataSource
 import android.arch.persistence.room.Dao
 import android.arch.persistence.room.Insert
